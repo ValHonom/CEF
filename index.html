@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TuLuca – Aprende sobre el interés 🐷</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1>🐷 TuLuca te da la bienvenida</h1>
+    <p>Hoy aprenderás: <strong>¿Qué es el interés?</strong></p>
+
+    <div id="historia">
+      <p>Imagina que te prestan $10.000 y te dicen que en un mes debes devolver $12.000. ¿Por qué?</p>
+    </div>
+
+    <div id="quiz">
+      <p><strong>1. ¿Qué es ese monto extra?</strong></p>
+      <button onclick="responder(1, 'interes')">Interés</button>
+      <button onclick="responder(1, 'propina')">Propina</button>
+      <button onclick="responder(1, 'impuesto')">Impuesto</button>
+
+      <p><strong>2. ¿Siempre es malo el interés?</strong></p>
+      <button onclick="responder(2, 'depende')">Depende</button>
+      <button onclick="responder(2, 'sí')">Sí</button>
+      <button onclick="responder(2, 'no')">No</button>
+
+      <p><strong>3. ¿Cómo evitar pagar tanto interés?</strong></p>
+      <button onclick="responder(3, 'pagando al día')">Pagando al día</button>
+      <button onclick="responder(3, 'pidiendo más')">Pidiendo más</button>
+      <button onclick="responder(3, 'usando tarjeta')">Usando tarjeta</button>
+    </div>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
